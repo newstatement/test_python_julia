@@ -5,5 +5,5 @@ function cputime(a,b,n)
 		a /= b
 	end
 	t1 = now()
-	return t1-t0
+	return [t1-t0, a]
 end
