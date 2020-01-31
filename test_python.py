@@ -4,4 +4,4 @@ def cputime(a,b,n):
 	for i in range(n):
 		a /= b
 	t1 = datetime.datetime.now()
-	return t1-t0
+	return [t1-t0, a]
