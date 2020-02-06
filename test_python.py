@@ -19,7 +19,7 @@ def exhaust_heuristic_time(n,s):
 			c[i] += random()
 		c[i] /= s
 	t1 = time.time_ns()
-	return [t1-t0,c]
+	return [(t1-t0)/1000,c]
 
 def runbatch(n,p,s):
 	f = open("time_python.csv","w")
