@@ -21,11 +21,11 @@ def exhaust_heuristic_time(n,s):
 	t1 = time.time_ns()
 	return [t1-t0,c]
 
-def runbatch(n,p):
+def runbatch(n,p,s):
 	f = open("time_python.csv","w")
 	for i in range(n):
 		for j in range(p):
-			r = exhaust_heuristic_time(n,s)
+			r = exhaust_heuristic_time(i+1,s)
 			f.write(r[0])
 			f.write(",")
 		f.write("\n")
