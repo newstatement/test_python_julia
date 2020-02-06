@@ -22,11 +22,11 @@ function exhaust_heuristic_time(n,s)
 	return [t1-t0,c]
 end
 
-function runbatch(n,p)
+function runbatch(n,p,s)
 	f = open("time_julia.csv","w")
 	for i =1:n
 		for j = 1:p
-			r = exhaust_heuristic_time(n,s)
+			r = exhaust_heuristic_time(i,s)
 			write(f,r[1])
 			write(f,",")
 		end
