@@ -19,7 +19,7 @@ function exhaust_heuristic_time(n,s)
 		c[i] /= s
 	end
 	t1 = time_ns()
-	return [(t1-t0)/1000,c]
+	return [Float64((t1-t0)/1000),c]
 end
 
 function runbatch(n,p,s)
