@@ -26,7 +26,6 @@ def runbatch(n,p,s):
 	for i in range(n):
 		for j in range(p):
 			r = exhaust_heuristic_time(i+1,s)
-			f.write(r[0])
-			f.write(",")
+			f.write(str(r[0])+",")
 		f.write("\n")
 	f.close()
