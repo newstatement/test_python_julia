@@ -1,6 +1,6 @@
 import datetime
 import math
-import random
+from radom import random
 
 def cputime(a,b,n):
 	t0 = datetime.datetime.now()
@@ -16,7 +16,7 @@ def exhaust_heuristic_time(n,s):
 	for i in range(p):
 		c[i] = 0.0
 		for j in range(s):
-			c[i] += uniform(0,1)
+			c[i] += random()
 		c[i] /= s
 	t1 = datetime.datetime.now()
 	return [t1-t0,c]
