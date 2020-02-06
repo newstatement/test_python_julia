@@ -12,7 +12,7 @@ def cputime(a,b,n):
 def exhaust_heuristic_time(n,s):
 	t0 = datetime.datetime.now()
 	p = math.factorial(n)
-	c = range(p)
+	c = [0.0] * p
 	for i in range(p):
 		c[i] = 0.0
 		for j in range(s):
