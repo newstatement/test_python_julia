@@ -1,6 +1,6 @@
 import datetime
 import math
-from radom import random
+from random import random
 
 def cputime(a,b,n):
 	t0 = datetime.datetime.now()
