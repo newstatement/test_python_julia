@@ -27,8 +27,7 @@ function runbatch(n,p,s)
 	for i =1:n
 		for j = 1:p
 			r = exhaust_heuristic_time(i,s)
-			write(f,r[1])
-			write(f,",")
+			write(f,string(r[1],","))
 		end
 		write(f,"\n")
 	end
